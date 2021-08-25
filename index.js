@@ -16,6 +16,7 @@ function handleData(data) {
   //debugger; //stop running js, and give access to that data
   let pop = data[0].population;
   console.log(`The population of Australia is ${pop}`);
+  console.log(pop);
 }
 
 fetch(url, { method: "GET" }).then(waitForData).then(handleData);
