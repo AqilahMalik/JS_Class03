@@ -1,0 +1,21 @@
+Replace the Logo
+
+1) Find the Google logo & store it in a variable using DOM traversal
+document.querySelector("body ntp-app").shadowRoot.querySelector("#logo").shadowRoot.querySelector("#logo");
+
+
+
+2) Save the current src attribute into a variable
+let logo = document.querySelector("body ntp-app").shadowRoot.querySelector("#logo").shadowRoot.querySelector("#logo");
+
+
+3) Modify the source of the logo IMG so that it's a Yahoo logo instead.
+logo.src = 'https://cdn.vox-cdn.com/thumbor/JiRzoaU535Vs9YjU6LcJSvIGFBs=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19224216/mb_yahoo_02.jpg';
+
+
+4) Find the Google search button and store it in a variable.
+let searchButton = document.querySelector("body > ntp-app").shadowRoot.querySelector("#realbox").shadowRoot.querySelector("#icon");
+
+5) Modify the text of the button so that it says "Yahooo!" instead
+let searchHolder = document.querySelector("body > ntp-app").shadowRoot.querySelector("#realbox").shadowRoot.querySelector("#input");
+searchHolder.textContent = "Yahoo!";

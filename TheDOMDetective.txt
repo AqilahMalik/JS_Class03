@@ -1,0 +1,41 @@
+1) The title of the page
+document.querySelector("title")
+<title>​Coding Bootcamps, Data Science, UX, Business | General Assembly​</title>
+
+2) The logo in the nav 
+​document.querySelector("a.navi_banner_logo")
+<a class="navi_banner_logo" href="https://generalassemb.ly">General Assembly</a>
+
+3) The "Find Your Course" button in the nav 
+document.querySelector("li.navi_menu_item.highlight");
+<li class=​"navi_menu_item highlight" data-track-section=​"find-your-course">​…​</li>​
+
+4) The heading that says "Learning Today, Leading Tomorrow" 
+document.querySelector("h1")
+<h1 data-reactid="17"><!-- react-text: 18 -->Learning Today,<!-- /react-text --><br class="md:hidden" data-reactid="19"><!-- react-text: 20 --> Leading Tomorrow<!-- /react-text --></h1>
+
+5) All the DOM nodes that contain course names
+document.querySelectorAll("div.courses-grid_item h3 span.course-name");
+NodeList(6) [span.course-name, span.course-name, span.course-name, span.course-name, span.course-name, span.course-name]
+
+6) The amount of campuses around the world  
+document.querySelector("div.facts_list div:nth-child(1) a div.facts_list_item_quantity");
+<div class="facts_list_item_quantity" data-reactid="342">30+</div>
+
+7) The number of instructors 
+document.querySelector("div.facts_list div:nth-child(3) a div.facts_list_item_quantity");
+<div class="facts_list_item_quantity" data-reactid="350">20,000+</div>
+
+8) The logos of GA's featured clients and hiring partners
+document.querySelector("div.Employers__light___FCu_N");
+
+9) GA's social links at the bottom (Facebook, Twitter, LinkedIn, Instagram, YouTube)
+document.querySelector(".navi_footer-social-icons_facebook");
+document.querySelector(".navi_footer-social-icons_twitter");
+document.querySelector(".navi_footer-social-icons_linkedin");
+document.querySelector(".navi_footer-social-icons_instagram");
+document.querySelector(".navi_footer-social-icons_youtube");
+
+10) The input where you add your email to sign up for the newsletter (in the footer)
+document.querySelector("div.navi_footer-signup-input");
+<div class="navi_footer-signup-input"><label for="footer-email" class="u-visually-hidden">Your email</label><input type="email" name="prospect[email]" placeholder="Your email" class="navi_footer-signup-email-input"></div>
